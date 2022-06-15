@@ -1,0 +1,30 @@
+    {% load static %}
+        <div class="text-center text-white">
+            <div>
+            {% block profilepic %}
+                <img src="{% static 'images/jas.jpeg' %}" alt="Profile picture" class="img-fluid rounded-circle mt-5" width="150px" height="150px" >
+            {% endblock profilepic %}
+           </div>
+      
+            <h4 class="st-font mt-3 text-warning">Jaswinder Singh</h4>
+            <hr class="border-warning w-10">
+        
+            <ul>
+                <a href="{% url 'index' %}" class="nav-link {{index}}">Home</a>
+                <a href="{% url 'profile' %}" class="nav-link {{profile}}">Profile</a>
+                <a href="{% url 'skills' %}" class="nav-link {{skills}}">Skills</a>
+                <a href="{% url 'certifications' %}" class="nav-link {{certifications}}">Certifications</a>
+                <a href="{% url 'projects' %}" class="nav-link {{projects}}">Projects</a>
+                <a href="{% url 'projectdet' %}" class="nav-link {{projectdet}}">Project Details</a>
+                <a href="{% url 'resume' %}" class="nav-link {{resume}}">Resume</a>
+   
+            </ul>
+        </div>
+        <div class="text-center">
+            <hr class="border-warning w-10">
+            <a href="#" target="_blank"><i class="fab fa-twitter i-color"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook-f i-color mx-3"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in i-color mx-3"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram i-color"></i></a>
+        </div>
+       

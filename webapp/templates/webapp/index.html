@@ -1,0 +1,44 @@
+{% extends 'webapp/base.html'%}
+{% block title %} Home Page {% endblock title %}
+{% block profilepic %}{% endblock profilepic %}
+{% block content %}
+{% load static %}
+    <div class="mt-5">
+        <!-- <hr class="border-warning">
+        <h2 class="text-center">About Portfolio</h2>
+        <hr class="border-warning"> -->
+        <div class="text-center">
+            <img src="{% static 'images/jas.jpeg'%}" alt="Profile picture" class="img-thumbnail border-warning" height="200px" width="200px" >
+        </div>
+            <br>
+            <br>
+
+        <h1 class="st-font text-white text-center text-warning"> <u><i> Jaswinder Singh </i> </u></h1>
+    </div>
+    <div>
+        <br>
+            <hr class="border-warning">
+  
+        <br>
+            
+        <h5 class="text-white">
+            <i>
+            <div style="line-height: 2rem;">
+            <p style= "text-align:justify">I am passionate about learning advance and new technologies which are used in the frontend or backend with framework
+                technology. I enjoy creating sleek and responsive applications in addition to begin a user-friendly environment. A
+                versatile software engineer interest in new software technologies and continuous self-improvement.</p>
+                <p style= "text-align:justify">
+                My Working experience with Ludhiana based company, development of
+                some projects which can personalized to the company, for analyze company's analytics data for further planning.
+                </p>
+            </div>
+            </i>
+        </h5>
+        <div class="text-center my-4 ">
+            <input type="button" value="Hire Me" class="btn btn-outline-warning mx-3">
+            <input type="button" value="Feedback" class="btn btn-outline-success">
+
+        </div>
+    </div>
+</div>
+{% endblock content%}
